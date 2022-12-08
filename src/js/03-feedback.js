@@ -11,9 +11,9 @@ form.addEventListener('submit', onFormSubmit);
 
 function onTextAreaInput(e){
 
-const inputs = JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
-    inputs[e.target.name] = e.target.value;
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(inputs));
+formData = JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
+    formData[e.target.name] = e.target.value;
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(formData));
 }
 
 
