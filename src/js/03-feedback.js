@@ -33,8 +33,8 @@ function populateTextArea() {
     if (!formData) {
         return
     }
-    form.email.value = formData.email
-    form.message.value = formData.message
+    form.email.value = formData.email || ''
+    form.message.value = formData.message || ''
 
 
 
